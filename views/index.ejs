@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <!-- Navbar -->
+
+    <%- include('header'); -%>
+    
+    <!-- Hero Section -->
+
+    <div class="hero flex  items-center min-h-[80vh] bg-[#f9f6f3] gap-[55px]">
+
+        <img class="pl-[90px] pt-[50px] " src="/imgs/hero-img1.png" alt="">
+        <div class="leaf flex flex-col gap-4">
+            <img class="object-scale-down w-[75px]" src="/imgs/leaf.png" alt="">
+            <h2 class="font-bold text-xl">Best Quality Products</h2>
+            <h1 class="font-bold text-5xl">Join The Organic Movement!</h1>
+            <p class=" text-2lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+            <a href="/everything"><button type="button" class="btn btn-success h-[60px] w-1/2 text-xl">
+                <i class="fa-solid fa-cart-shopping m-[10px]"></i>
+                Shop Now</button></a>
+        </div>
+
+    </div>
+
+    <!-- Second Section -->
+    <div class="second h-[40vh] bg-black flex gap-4 items-center px-[20px]">
+        <div class="card1 bg-[#333333] h-[160px] w-[25%] rounded-md  flex flex-col items-center justify-center ">
+
+            <i class="fa-solid fa-truck text-[#94c455] text-3xl"></i>
+            <h1 class="text-white font-bold text-2xl mt-2">Free Shipping</h1>
+            <p class="text-white ">Above $5 Only</p>
+
+        </div>
+        <div class="card2 bg-[#333333] h-[160px] w-[25%] rounded-md  flex flex-col items-center justify-center">
+            <i class="fa-solid fa-address-book text-[#94c455] text-3xl"></i>
+            <h1 class="text-white font-bold text-2xl mt-2">Certified Organic </h1>
+            <p class="text-white ">100% Guarantee</p>
+        </div>
+        <div class="card3 bg-[#333333] h-[160px] w-[25%] rounded-md  flex flex-col items-center justify-center">
+            <i class="fa-solid fa-money-bill-wheat text-[#94c455] text-3xl"></i>
+            <h1 class="text-white font-bold text-2xl mt-2">Huge Savings
+            </h1>
+            <p class="text-white "> At Lowest Price</p>
+        </div>
+        <div class="card4 bg-[#333333] h-[160px] w-[25%] rounded-md  flex flex-col items-center justify-center">
+            <i class="fa-solid fa-recycle text-[#94c455] text-3xl"></i>
+            <h1 class="text-white font-bold text-2xl mt-2">Easy Returns
+            </h1>
+            <p class="text-white ">No Questions Asked</p>
+        </div>
+
+    </div>
+    <!-- Third Section -->
+    <div class="third flex flex-col items-center justify-center mt-[100px] gap-5">
+        <h1 class="font-bold text-4xl">Best Selling Products</h1>
+        <img src="/imgs/leaf.png" alt="leaf">
+     <%- include("cards"); -%>
+     <div class="img flex justify-center mt-[40px]">
+        <img class="" src="/imgs/leaf2.png" alt="">
+    </div>
+    </div>
+    <!-- Fourth Section -->
+    <div class="fourth flex items-center min-h-[80vh] bg-[#f9f6f3] gap-3 px-3 mt-[50px]">
+
+        <div class="card border-none  h-[45%] w-[45%] ">
+
+            <div class="card-body flex flex-col items-center justify-center text-wrap">
+                <h5 class="card-title font-bold text-3xl">Farm Fresh Fruits</h5>
+                <p class="card-text text-center ">Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                <button type="button"
+                    class="btn btn-success border-none bg-[#94c455] h-[50px] w-[50%] text-lg mt-[10px]">
+                    <i class="fa-solid fa-arrow-right "></i>
+                    Shop Now</button>
+                <img class="relative h-[178px] right-[-68px] b-[15px]" src="/imgs/lemon1.png" alt="">
+
+            </div>
+        </div>
+        <div class="card border-none  h-[45%] w-[45%] ">
+
+            <div class="card-body flex flex-col items-center justify-center text-wrap">
+                <h5 class="card-title font-bold text-3xl">Farm Fresh Fruits</h5>
+                <p class="card-text text-center ">Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                <button type="button"
+                    class="btn btn-success border-none bg-[#94c455] h-[50px] w-[50%] text-lg mt-[10px]">
+                    <i class="fa-solid fa-arrow-right "></i>
+                    Shop Now</button>
+                <img class="relative h-[178px] right-[-68px] b-[15px]" src="/imgs/lemon1.png" alt="">
+
+            </div>
+        </div>
+        <div class="card border-none  h-[45%] w-[45%] ">
+
+            <div class="card-body flex flex-col items-center justify-center text-wrap">
+                <h5 class="card-title font-bold text-3xl">Farm Fresh Fruits</h5>
+                <p class="card-text text-center ">Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                <button type="button"
+                    class="btn btn-success border-none bg-[#94c455] h-[50px] w-[50%] text-lg mt-[10px]">
+                    <i class="fa-solid fa-arrow-right "></i>
+                    Shop Now</button>
+                <img class="relative h-[178px] right-[-68px] b-[15px]" src="/imgs/lemon1.png" alt="">
+
+            </div>
+        </div>
+        <div class="card border-none  h-[45%] w-[45%] ">
+
+            <div class="card-body flex flex-col items-center justify-center text-wrap">
+                <h5 class="card-title font-bold text-3xl">Farm Fresh Fruits</h5>
+                <p class="card-text text-center ">Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                <button type="button"
+                    class="btn btn-success border-none bg-[#94c455] h-[50px] w-[50%] text-lg mt-[10px]">
+                    <i class="fa-solid fa-arrow-right "></i>
+                    Shop Now</button>
+                <img class="relative h-[178px] right-[-68px] b-[15px]" src="/imgs/lemon1.png" alt="">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Fifth Section -->
+    <div class="fourth h-[25vh] bg-black flex gap-4 items-center justify-between px-[32px] ">
+        <h1 class="font-bold text-white text-3xl">Get 25% Off On Your First Purchase!</h1>
+        <button type="button" class="btn btn-success h-[60px] w-[20%] text-xl">
+            <a class="hover:no-underline hover:text-[#94c455]" href="/everything"><i class="fa-solid fa-cart-shopping m-[10px]"></i>
+            Shop Now</button></a>
+
+    </div>
+    <svg class="bg-[#f9f6f3]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 10" preserveAspectRatio="none">
+        <path class="elementor-shape-fill" d="M350,10L340,0h20L350,10z"></path>
+    </svg>
+<div class="bg-[#f9f6f3] h-[100px] flex items-center justify-center">
+<h1 class="font-bold text-center text-3xl ">Try It For Free. No Registration Needed.</h1>
+</div>
+
+<!-- Sixth Section -->
+<div class="third flex flex-col items-center justify-center mt-[100px] gap-5">
+    <h1 class="font-bold text-4xl">Trending Products</h1>
+    <img src="/imgs/leaf.png" alt="leaf">
+    <div class="cards flex gap-4">
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">Assorted Coffee</h2>
+                <p>Rs.35.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">Hand Sanitizer</h2>
+                <p>Rs.15.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">HandPicked Red Chills</h2>
+                <p>Rs.19.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="last bg-[#f9f6f3] flex items-center justify-around px-5">
+    <h1 class="text-3xl font-semibold">Featured Brands:</h1>
+    <img src="/imgs/feat2.svg" alt="featured-img">
+    <img src="/imgs/feat3.svg" alt="featured-img">
+    <img src="/imgs/feat4.svg" alt="featured-img">
+    <img src="/imgs/feat1.svg" alt="featured-img">
+    <img src="/imgs/feat5.svg" alt="featured-img">
+</div>
+<!-- Footer -->
+ <%- include("footer"); -%>
+
+</body>
+
+</html>

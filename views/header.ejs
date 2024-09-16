@@ -1,0 +1,69 @@
+<!-- Navbar -->
+<nav class="flex justify-between ">
+    <div class="bg-white flex items-center  p-[25px]">
+
+        <a href="/"><img class="h-[70px]" src="/imgs/logo.svg" alt="logo"></a>
+
+        <ul class="list-none flex gap-6 font-semibold text-lg ml-[48px] ">
+            <a class="hover:no-underline"  href="/everything"><li class="hover:cursor-pointer hover:text-[#94c455]">Everything</li></a>
+           <a  class="hover:no-underline" href="/groceries"><li class="hover:cursor-pointer hover:text-[#94c455]">Groceries</li></a>
+            <a class="hover:no-underline" href="/juices"><li class="hover:cursor-pointer hover:text-[#94c455]">Juices</li></a>
+        </ul>
+    </div>
+    <div class="flex items-center px-[80px] py-0 my-0">
+        <ul class="list-none flex gap-6 font-semibold text-lg">
+           <a class="hover:no-underline"  href="/about">  <li class="hover:cursor-pointer hover:text-[#94c455]">About</li></a>
+           <a class="hover:no-underline"  href="/contact"><li class="hover:cursor-pointer hover:text-[#94c455]" b>Contact</li></a>
+        </ul>
+
+
+        <!-- Cart Section -->
+<div class="relative">
+    <!-- Cart Icon -->
+    <i id="openCart" class="fa-solid fa-basket-shopping pl-[25px] text-[#94c455] cursor-pointer"></i>
+
+    <!-- Cart Overlay (hidden by default) -->
+    <div class="cart-overlay hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+
+    <!-- Cart Panel (hidden by default) -->
+    <div class="cart-panel fixed top-0 right-0 h-full w-[35%] bg-white shadow-lg z-50 hidden">
+        <div class="cart-header flex justify-between items-center p-4 border-b">
+            <h2 class="text-lg font-semibold">Cart</h2>
+            <button id="closeCart" class="text-xl font-bold">&times;</button>
+        </div>
+        <div class="cart-body p-4">
+            <!-- Cart items go here -->
+            <p>Your cart is empty!</p>
+            <a href="/everything"><button type="button" class="btn btn-success h-[60px] w-[53%] text-xl absolute bottom-2">
+                <i class="fa-solid fa-cart-shopping m-[10px]"></i>
+                Continue Shopping</button></a>
+        </div>
+    </div>
+</div>
+<!-- End Cart Section -->
+        <i class="fa-solid fa-user pl-[25px] text-xl"></i>
+    </div>
+
+</nav>
+<!-- JavaScript for Cart Functionality -->
+<script>
+    const cartPanel = document.querySelector('.cart-panel');
+    const cartOverlay = document.querySelector('.cart-overlay');
+    const openCartButton = document.getElementById('openCart');
+    const closeCartButton = document.getElementById('closeCart');
+
+    openCartButton.addEventListener('click', () => {
+        cartPanel.classList.remove('hidden');
+        cartOverlay.classList.remove('hidden');
+    });
+
+    closeCartButton.addEventListener('click', () => {
+        cartPanel.classList.add('hidden');
+        cartOverlay.classList.add('hidden');
+    });
+
+    cartOverlay.addEventListener('click', () => {
+        cartPanel.classList.add('hidden');
+        cartOverlay.classList.add('hidden');
+    });
+</script>

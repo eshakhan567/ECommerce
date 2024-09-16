@@ -1,0 +1,49 @@
+<!-- 
+    <div class="cards flex gap-4">
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">Assorted Coffee</h2>
+                <p>Rs.35.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">Hand Sanitizer</h2>
+                <p>Rs.15.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">HandPicked Red Chills</h2>
+                <p>Rs.19.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 18rem;">
+            <img src="/imgs/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text ">Groceries</p>
+                <h2 class="font-bold text-lg">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+    </div>
+ -->
+ <div class="cards flex gap-4">
+    <% products.forEach(product => { %>
+      <div class="card border-none" style="width: 18rem;">
+        <img src="<%= product.image %>" class="card-img-top" alt="<%= product.name %>">
+        <div class="card-body text-center">
+          <p class="card-text "><%= product.category %></p>
+          <h2 class="font-bold text-lg"><%= product.name %></h2>
+          <p>Rs.<%= product.price %>.00</p>
+          <a class="hover:italic hover:text-[#94c455]" href="/product/<%= product.id %>">View Details</a>
+        </div>
+      </div>
+    <% }) %>
+  </div>

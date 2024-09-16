@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('header'); -%>
+        <div class="first  min-h-[80vh] bg-[#f9f6f3] flex gap-3 pb-[160px]">
+
+            <div class="left w-[30%] flex flex-col gap-12 ">
+                <div class="searchbar flex items-center justify-center mt-[60px] gap-3">
+                    <input class="h-[45px] p-[10px] border border-black " type="text" placeholder="Search Products">
+                    <button type="button" class="btn btn-success border-none bg-[#94c455] h-[45px] w-[40px] text-lg ">
+                        <i class="fa-solid fa-greater-than"></i>
+                    </button>
+                </div>
+                
+                <div class=" ">
+                    <h1 class="font-bold text-3xl pl-[75px]"> Filter by price</h1>
+                 </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <a class="hover:cursor-pointer hover:no-underline hover:text-[#303d1e]" href=""><span class="text-[#94c455] text-lg mr-[20px]">Groceries</span>(10)</a>
+                    <a class="hover:cursor-pointer hover:no-underline hover:text-[#303d1e]" href=""><span class="text-[#94c455] text-lg mr-[20px]">Juices</span>(9)</a>
+                
+                
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                   
+    <div class="cards ">
+        <div class="card border-none" style="width: 13rem;">
+            <img src="/imgs/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body   bg-[#f9f6f3]">
+                
+                <h2 class="font-bold text-lg text-[#94c455]">Assorted Coffee</h2>
+                <p>Rs.35.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 13rem;">
+            <img src="/imgs/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+                
+                <h2 class="font-bold text-lg text-[#94c455]">Hand Sanitizer</h2>
+                <p>Rs.15.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 13rem;">
+            <img src="/imgs/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+                
+                <h2 class="font-bold text-lg text-[#94c455]">HandPicked Red Chills</h2>
+                <p>Rs.19.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 13rem;">
+            <img src="/imgs/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+               
+                <h2 class="font-bold text-lg text-[#94c455]">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+            </div>
+            <div class="border-l border-slate-800 opacity-[0.2] my-[35px] ">
+
+            </div>
+            <div class="right w-[70%] mt-[45px] pl-[75px] pt-[22px] gap-5 relative">
+
+<div class="flex flex-col">
+
+
+             <span class="text-gray-500"><a class="hover:cursor-pointer hover:no-underline hover:text-[#303d1e]" href="/">Home/</a>Shop</span>
+               <h1 class="font-bold text-6xl text-[#94c455] mt-[35px]">Groceries</h1>
+               <span class="text-gray-500 mt-[68px]">Showing 1–9 of 12 results</span>
+               <nav aria-label="Page navigation example">
+                <ul class="pagination absolute bottom-0" >
+                  <li class="page-item"><a class="page-link" href="/everything"><i class="fa-solid fa-arrow-left text-[#94c455]"></i></a></li>
+                  <li class="page-item"><a class="page-link text-[#94c455]" href="/everything">1</a></li>
+                  <li class="page-item"><a class="page-link text-[#94c455]" href="/everything">2</a></li>
+                  <li class="page-item"><a class="page-link text-[#94c455]" href="/everything">3</a></li>
+                 
+                </ul>
+              </nav>
+            </div>
+
+             <!-- Cards page1 -->
+<div class="">
+ <div class="cards flex flex-wrap gap-4 mt-[75px]">
+        <div class="card border-none" style="width: 15rem;">
+            <img src="/imgs/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body   bg-[#f9f6f3]">
+                
+                <h2 class="font-bold text-lg text-[#94c455]">Assorted Coffee</h2>
+                <p>Rs.35.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 15rem;">
+            <img src="/imgs/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+                
+                <h2 class="font-bold text-lg text-[#94c455]">Hand Sanitizer</h2>
+                <p>Rs.15.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 15rem;">
+            <img src="/imgs/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+                
+                <h2 class="font-bold text-lg text-[#94c455]">HandPicked Red Chills</h2>
+                <p>Rs.19.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 15rem;">
+            <img src="/imgs/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+               
+                <h2 class="font-bold text-lg text-[#94c455]">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+        <div class="card border-none" style="width: 15rem;">
+            <img src="/imgs/card5.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+               
+                <h2 class="font-bold text-lg text-[#94c455]">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+
+        <div class="card border-none" style="width:15rem;">
+            <img src="/imgs/card6.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+               
+                <h2 class="font-bold text-lg text-[#94c455]">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+
+        <div class="card border-none" style="width: 15rem;">
+            <img src="/imgs/card7.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+               
+                <h2 class="font-bold text-lg text-[#94c455]">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+
+        <div class="card border-none" style="width: 15rem;">
+            <img src="/imgs/card8.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+               
+                <h2 class="font-bold text-lg text-[#94c455]">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+
+        <div class="card border-none" style="width:15rem;">
+            <img src="/imgs/card9.jpg" class="card-img-top" alt="...">
+            <div class="card-body  bg-[#f9f6f3]">
+               
+                <h2 class="font-bold text-lg text-[#94c455]">Natural Extracted Edible Oil</h2>
+                <p>Rs.25.00</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+            </div>
+        </div>
+        <%- include("footer"); -%>
+        
+</body>
+
+</html>
